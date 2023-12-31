@@ -14,25 +14,38 @@
     <!-- <div class="loader-holder" id="loader">
         <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div> -->
-    <div class="main-container" id="mainContainer">
-        <img class="background-image" src="./img/background.jpg" alt="Background Image">
+    <div class="image_container hidden_container">
+        <!-- <img class="background-image" src="./img/background.jpg" alt="Background Image"> -->
         <h1>მეწარმე ქალები ზემო რაჭიდან</h1>
-
-
-        <div class="img_container" id="gallery">
-            <div class="image-container" id="1" onclick="showPhoto(this.id)">
-                <img src="./img/firstMainCover.jpg" alt="Image 1">
-                <div></div>
-            </div>
-
-            <div class="image-container" id="2" onclick="showPhoto(this.id)">
-                <img src="./img/secondMainCover.jpeg" alt="Image 2">
-            </div>
-
-            <div class="image-container" id="3" onclick="showPhoto(this.id)">
-                <img src="./img/thirdMainCover.jpeg" alt="Image 3">
+        <!-- <i class="arrow down"></i> -->
+        <a href="#mainContainer" class="down-arrow"></a>
+    </div>
+    <div class="main-container hidden_container" id="mainContainer">
+        <div class="image-container" id="1" onclick="showPhoto(this.id)">
+            <img src="./img/firstMainCover.jpg" alt="Image 1">
+            <div class="card_container">
+                <h3>ეკას ისტორია</h3>
+                <button>წაიკითხე მეტი</button>
             </div>
         </div>
+
+        <div class="image-container" id="2" onclick="showPhoto(this.id)">
+            <img src="./img/secondMainCover.jpeg" alt="Image 2">
+            <div class="card_container">
+                <h3>ნინის ისტორია</h3>
+                <button>წაიკითხე მეტი</button>
+            </div>
+        </div>
+
+        <div class="image-container" id="3" onclick="showPhoto(this.id)">
+            <img src="./img/thirdMainCover.jpeg" alt="Image 3">
+            <div class="card_container">
+                <h3>მარის ისტორია</h3>
+                <button>წაიკითხე მეტი</button>
+            </div>
+        </div>
+    </div>
+    <div  class="second-image hidden_container">
     </div>
     <div class="full_story_container">
         <div class="each_story_container" id="story_1">
@@ -357,6 +370,9 @@
             </p>
         </div>
     </div>
+    <footer>
+        <img src="./img/415041041_1415864152615306_8814770981081573874_n.png" alt="">
+    </footer>
 </body>
 <script src="./script.js"></script>
 
