@@ -11,13 +11,8 @@
 </head>
 
 <body>
-    <!-- <div class="loader-holder" id="loader">
-        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-    </div> -->
     <div class="image_container hidden_container">
-        <!-- <img class="background-image" src="./img/background.jpg" alt="Background Image"> -->
         <h1>მეწარმე ქალები ზემო რაჭიდან</h1>
-        <!-- <i class="arrow down"></i> -->
         <a href="#mainContainer" class="down-arrow"></a>
     </div>
     <div class="main-container hidden_container" id="mainContainer">
@@ -32,7 +27,7 @@
         <div class="image-container" id="2" onclick="showPhoto(this.id)">
             <img src="./img/secondMainCover.jpeg" alt="Image 2">
             <div class="card_container">
-                <h3>ნინის ისტორია</h3>
+                <h3>ნანის ისტორია</h3>
                 <button>წაიკითხე მეტი</button>
             </div>
         </div>
@@ -49,7 +44,7 @@
     </div>
     <div class="full_story_container">
         <div class="each_story_container" id="story_1">
-            <span id="story_1" onclick="hidePhoto(this.id)" class="back_arrow">&#8592;</span>
+            <span id="story_1" data-id="backArrow"onclick="hidePhoto(this.id)" class="back_arrow">&#8592;</span>
             <h1>ეკას ისტორია</h1>
             <img id="fullPhotoImg" src="./img/firstMainCover.jpg" alt="">
             <p id="articleText">ეკა კუკულავას ინტერვიუს ჩასაწერად ლობიანების ცხობის დროს მივუსწარით და კინაღამ სათქმელი
@@ -120,8 +115,8 @@
             </p>
         </div>
         <div class="each_story_container" id="story_2">
-            <span id="story_2" onclick="hidePhoto(this.id)" class="back_arrow">&#8592;</span>
-            <h1>ნინის ისტორია</h1>
+            <span id="story_2"  data-id="backArrow" onclick="hidePhoto(this.id)" class="back_arrow">&#8592;</span>
+            <h1>ნანის ისტორია</h1>
             <img id="fullPhotoImg" src="./img/secondMainCover.jpeg" alt="">
             <p id="articleText">
                 <i>
@@ -254,7 +249,7 @@
             </p>
         </div>
         <div class="each_story_container" id="story_3">
-            <span id="story_3" onclick="hidePhoto(this.id)" class="back_arrow">&#8592;</span>
+            <span id="story_3"  data-id="backArrow" onclick="hidePhoto(this.id)" class="back_arrow">&#8592;</span>
             <h1>მარის ისტორია</h1>
             <img id="fullPhotoImg" src="./img/thirdMainCover.jpeg" alt="">
             <p id="articleText">
@@ -372,6 +367,7 @@
     </div>
     <footer>
         <img src="./img/415041041_1415864152615306_8814770981081573874_n.png" alt="">
+        <h4>ვებგვერდი შექმნილია "ქალთა ფონდი საქართველოში" მხარდაჭრით.</h4>
     </footer>
 </body>
 <script src="./script.js"></script>
